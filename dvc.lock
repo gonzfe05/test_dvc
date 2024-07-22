@@ -5,9 +5,9 @@ stages:
     deps:
     - path: data/
       hash: md5
-      md5: c1321d85ef0a30714a1a00e08f9f533d.dir
+      md5: 02deba0f7acf5b1f36d5ab674e96c8b6.dir
       size: 0
-      nfiles: 3
+      nfiles: 4
     - path: pre.py
       hash: md5
       md5: 638c8c922f57c0668fcacfa6ddc0ce5f
@@ -15,8 +15,8 @@ stages:
     outs:
     - path: prepro/
       hash: md5
-      md5: a499074ef7220e6f5f17448349afacd7.dir
-      size: 65
+      md5: 4bf6fbf2c7ffb1a6769c2a0f0a438427.dir
+      size: 87
       nfiles: 1
   post:
     cmd: python main.py
@@ -27,8 +27,8 @@ stages:
       size: 318
     - path: prepro/
       hash: md5
-      md5: a499074ef7220e6f5f17448349afacd7.dir
-      size: 65
+      md5: 4bf6fbf2c7ffb1a6769c2a0f0a438427.dir
+      size: 87
       nfiles: 1
     outs:
     - path: dvclive/
