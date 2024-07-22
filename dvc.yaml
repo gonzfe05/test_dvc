@@ -11,5 +11,6 @@ stages:
     deps:
       - main.py
       - prepro/
+      - params.yaml
     outs:
       - dvclive/

@@ -1,4 +1,6 @@
 [core]
     remote = localremote
+[hydra]
+    enabled = True
 ['remote "localremote"']
     url = /home/aleph/dvc_remote
