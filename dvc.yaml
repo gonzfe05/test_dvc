@@ -6,7 +6,7 @@ stages:
       - data/
     outs:
       - prepro/
-  run:
+  post:
     cmd: python main.py
     deps:
       - main.py
