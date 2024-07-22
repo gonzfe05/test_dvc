@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  pre:
+    cmd: python pre.py
+    deps:
+    - path: data/
+      hash: md5
+      md5: 45a89dc799d9b7515491fd735d9b83cf.dir
+      size: 0
+      nfiles: 2
+    - path: pre.py
+      hash: md5
+      md5: 638c8c922f57c0668fcacfa6ddc0ce5f
+      size: 268
+    outs:
+    - path: prepro/
+      hash: md5
+      md5: 151e85a20942ab97b5945fbfd9df1616.dir
+      size: 51
+      nfiles: 1
+  post:
+    cmd: python main.py
+    deps:
+    - path: main.py
+      hash: md5
+      md5: 1c41ecb5066b7fc23200961896b4b32b
+      size: 318
+    - path: prepro/
+      hash: md5
+      md5: 151e85a20942ab97b5945fbfd9df1616.dir
+      size: 51
+      nfiles: 1
+    outs:
+    - path: dvclive/
+      hash: md5
+      md5: 2301fd90ef32aa906515a63a7242a6f2.dir
+      size: 13
+      nfiles: 1
