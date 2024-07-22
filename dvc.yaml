@@ -1,0 +1,15 @@
+stages:
+  pre:
+    cmd: python pre.py
+    deps:
+      - pre.py
+      - data/
+    outs:
+      - prepro/
+  run:
+    cmd: python main.py
+    deps:
+      - main.py
+      - prepro/
+    outs:
+      - dvclive/
